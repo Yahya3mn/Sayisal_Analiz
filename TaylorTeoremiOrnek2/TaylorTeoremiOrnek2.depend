@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1698337360 source:c:\users\yahya\documents\github\sayisal_analiz\taylorteoremiornek2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
