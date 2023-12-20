@@ -7,8 +7,8 @@ int main() {
     float x[20], y[20][20];
     int i, j, n;
 
-    /* Input Section */
-    printf("Enter number of data?\n");
+    
+    printf("Kac adet sayi girilecek?\n");
     scanf("%d", &n);
     printf("Enter data:\n");
     for (i = 0; i < n; i++) {
@@ -18,15 +18,15 @@ int main() {
         scanf("%f", &y[i][0]);
     }
 
-    /* Generating Forward Difference Table */
+    
     for (i = 1; i < n; i++) {
         for (j = 0; j < n - i; j++) {
             y[j][i] = (y[j + 1][i - 1] - y[j][i - 1]) / (x[j + i] - x[j]);
         }
     }
 
-    /* Displaying Forward Difference Table */
-    printf("\nFORWARD DIFFERENCE TABLE\n\n");
+    
+    printf("\nÝleri-Fark Tablosu\n\n");
     for (i = 0; i < n; i++) {
         printf("%0.2f", x[i]);
         for (j = 0; j < n - i; j++) {
