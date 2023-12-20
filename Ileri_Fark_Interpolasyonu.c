@@ -10,7 +10,7 @@ int main() {
     
     printf("Kac adet sayi girilecek?\n");
     scanf("%d", &n);
-    printf("Enter data:\n");
+    printf("Sayilari giriniz:\n");
     for (i = 0; i < n; i++) {
         printf("x[%d]=", i);
         scanf("%f", &x[i]);
